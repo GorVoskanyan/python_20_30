@@ -1,5 +1,3 @@
-print('Hello team!')
-print("Hello dear")
 import string
 
 alphabet = list(string.ascii_uppercase)
