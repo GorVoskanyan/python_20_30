@@ -46,3 +46,21 @@ data = {
 
 
 # TODO այստեղ գրել կոդը
+for key, value in data.items():
+    print(f"{key}: {value}")
+
+
+data['ETH']['total_diff'] = 100
+
+
+data['tokens'][0]['fst_token_info']['name'] = 'doge'
+
+
+total_out_sum = 0
+for token in data['tokens']:
+    total_out_sum += token.pop('total_out', 0)
+data['ETH']['totalOut'] = total_out_sum
+
+
+data['tokens'][1]['sec_token_info']['total_price'] = data['tokens'][1]['sec_token_info'].pop('price')
+print(data)
