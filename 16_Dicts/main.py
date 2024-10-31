@@ -89,30 +89,30 @@
 
 
 # dictionary
-dictionary = dict()
-
-words_count = int(input('Enter words count: '))
-
-for i in range(words_count):
-    word = input('Enter word: ')
-    synonym = input('Enter synonym: ')
-    dictionary[word] = synonym
-
-print(dictionary)
-
-while True:
-    word = input('Enter word: ')
-    if not word:
-        print('Bye-Bye.')
-        break
-    for key, value in dictionary.items():
-        if word == key:
-            synonym = value
-            print(synonym)
-            break
-        elif word == value:
-            synonym = key
-            print(synonym)
-            break
-    else:
-        print('Not found.')
+# dictionary = dict()
+#
+# words_count = int(input('Enter words count: '))
+#
+# for i in range(words_count):
+#     word = input('Enter word: ')
+#     synonym = input('Enter synonym: ')
+#     dictionary[word] = synonym
+#
+# print(dictionary)
+#
+# while True:
+#     word = input('Enter word: ')
+#     if not word:
+#         print('Bye-Bye.')
+#         break
+#     for key, value in dictionary.items():
+#         if word == key:
+#             synonym = value
+#             print(synonym)
+#             break
+#         elif word == value:
+#             synonym = key
+#             print(synonym)
+#             break
+#     else:
+#         print('Not found.')
