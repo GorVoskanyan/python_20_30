@@ -1,3 +1,5 @@
+import pprint
+
 data = {
     "address": "0x544444444444",
     "ETH": {
@@ -22,7 +24,7 @@ data = {
             },
             "balance": 5000,
             "totalIn": 0,
-            "total_out": 0
+            "total_out": 1
         },
         {
             "sec_token_info": {
@@ -39,28 +41,21 @@ data = {
             },
             "balance": 500,
             "totalIn": 0,
-            "total_out": 0
+            "total_out": 1
         }
     ]
 }
 
 
-# TODO այստեղ գրել կոդը
-for key, value in data.items():
-    print(f"{key}: {value}")
 
+# all_keys = data.keys()
+# all_values = data.values()
+# print(all_keys)
+# print(all_values)
 
 data['ETH']['total_diff'] = 100
-
-
 data['tokens'][0]['fst_token_info']['name'] = 'doge'
-
-
-total_out_sum = 0
-for token in data['tokens']:
-    total_out_sum += token.pop('total_out', 0)
-data['ETH']['totalOut'] = total_out_sum
-
-
+data['ETH']['total_out'] += data['tokens'][0].pop('total_out')
+data['ETH']['total_out'] += data['tokens'][1].pop('total_out')
 data['tokens'][1]['sec_token_info']['total_price'] = data['tokens'][1]['sec_token_info'].pop('price')
-print(data)
+pprint.pprint(data)
