@@ -25,3 +25,10 @@ store = {
 }
 
 # TODO այստեղ գրել կոդը
+for product_name, product_code in goods.items():
+    total_quantity = 0
+    total_cost = 0
+    for item in store[product_code]:
+        total_quantity += item['quantity']
+        total_cost += item['quantity'] * item['price']
+    print(f"{product_name} - {total_quantity} հատ, ընդհանուր արժեքը՝ {total_cost} դրամ")name} - {total_quantity} հատ, ընդհանուր արժեքը՝ {total_cost} դրամ")
