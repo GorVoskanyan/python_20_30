@@ -24,7 +24,6 @@ store = {
     ],
 }
 
-# TODO այստեղ գրել կոդը
 for product_name, product_code in goods.items():
     total_quantity = 0
     total_cost = 0
