@@ -27,9 +27,10 @@
 # print(s1)
 
 # s3 = s1.difference(s2)
-# s3 = s1 - s2
+# s3 = s2 - s1
 # s1.difference_update(s2)
 # print(s1)
+# print(s3)
 
 # s3 = s1.symmetric_difference(s2)
 # s3 = s1 ^ s2
