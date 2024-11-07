@@ -17,7 +17,7 @@ from task_146 import generate_card, display_card
 from task_147 import is_win
 
 
-def game_main_loop(card: dict) -> None:
+def main(card: dict) -> None:
     box = list(range(1, 76))
     shuffle(box)
     print('Welcome'.center(25, '_'))
@@ -38,4 +38,4 @@ def game_main_loop(card: dict) -> None:
 
 if __name__ == '__main__':
     card = generate_card()
-    game_main_loop(card)
+    main(card)
