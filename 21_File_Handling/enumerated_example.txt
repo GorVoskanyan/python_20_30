@@ -1,0 +1,4 @@
+1: hello world
+2: Բարև աշխարհ
+3: third line
+4: fourth line
