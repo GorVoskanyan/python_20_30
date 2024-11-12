@@ -1,0 +1,3 @@
+Name: Gor
+Age: 28
+Languages: ["Python"]
