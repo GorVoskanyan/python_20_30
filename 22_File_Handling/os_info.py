@@ -13,3 +13,6 @@ with open(abs_path, 'w', encoding='utf-8') as file:
         f"Sys verison: {sys.version}\n"
         f"Platform: {platform.uname()}"
     )
+
+
+print(sys.getsizeof(__name__))
